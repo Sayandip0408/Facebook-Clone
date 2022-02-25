@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="shortcut icon" href="/fb.png" type="image/x-icon">
+    <link rel="stylesheet" href="/home.css">
+    <link rel="stylesheet" href="/home_media.css">
+    <script src="/script.js"></script>
+    <script src="https://kit.fontawesome.com/45e0f9f93b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- <h1>lol</h1> -->
+    <div class="nav">
+        <button id="fb"><i class="fab fa-facebook"></i></button>
+        <input type="search" name="search" id="search" placeholder="Search Facebook">
+
+
+        <div class="btn">
+            <button id="home"><i class="fas fa-home"></i></button>
+            <button id="play" onclick="alert_function()"><i class="far fa-play-circle"></i></button>
+            <button id="store" onclick="alert_function()"><i class="fas fa-store"></i></button>
+            <button id="user-grp" onclick="alert_function()"><i class="fas fa-users"></i></button>
+            <button id="game" onclick="alert_function()"><i class="fas fa-gamepad"></i></button>
+        </div>
+
+        <button id="account"><i class="fas fa-caret-down"></i></button>
+        <button id="notification"><i class="fas fa-bell"></i></button>
+        <button id="messenger-btn" onclick="messenger()"><i class="fab fa-facebook-messenger"></i></button>
+        <button id="list"><i class="fas fa-th"></i></button>
+
+        <div class="nav-user">
+            <button id="nav-user"><i class="fas fa-user"></i></button>
+            <button id="name">Zuku Kaku</button>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="left-menu">
+            <div class="user">
+                <button id="user"><i class="fas fa-user"></i></button>
+                <button id="user-name">Zuku Kaku</button>
+            </div>
+            <div class="friends">
+                <button id="user-friends"><i class="fas fa-user-friends"></i></button>
+                <button id="friends">Friends</button>
+            </div>
+            <div class="saved">
+                <button id="saved-icon"><i class="fas fa-bookmark"></i></button>
+                <button id="saved">Saved</button>
+            </div>
+            <div class="group">
+                <button id="group-icon"><i class="fas fa-users"></i></button>
+                <button id="group">Groups</button>
+            </div>
+            <div class="marketplace">
+                <button id="marketplace-icon"><i class="fas fa-store"></i></button>
+                <button id="marketplace">Marketplace</button>
+            </div>
+            <div class="watch">
+                <button id="watch-icon"><i class="fab fa-youtube"></i></button>
+                <button id="watch">Watch</button>
+            </div>
+            <div class="watch">
+                <button id="More-icon"><i class="fas fa-angle-down"></i></button>
+                <button id="More">More...</button>
+            </div>
+            <hr>
+            <div class="watch">
+                <button id="Bantugiri-icon"><i class="fas fa-grin-squint-tears"></i></button>
+                <button id="Bantugiri">বান্টুগিরি - Bantugiri</button>
+            </div>
+            <div class="watch">
+                <button id="OMG-icon"><i class="far fa-surprise"></i></button>
+                <button id="OMG">OMG</button>
+            </div>
+            <div class="watch">
+                <button id="Ball-icon"><i class="fas fa-bowling-ball"></i></button>
+                <button id="Ball">8 Ball Pull</button>
+            </div>
+            <div class="watch">
+                <button id="Candy-icon"><i class="fas fa-candy-cane"></i></button>
+                <button id="Candy">Candy Crush Saga</button>
+            </div>
+            <div class="watch">
+                <button id="Focussy-icon"><i class="far fa-images"></i></button>
+                <button id="Focussy">Focussy</button>
+            </div>
+            <div class="watch">
+                <button id="More-icon"><i class="fas fa-angle-down"></i></button>
+                <button id="More">More...</button>
+            </div>
+        </div>
+
+        <div class="news-feed">
+            <div class="story">
+                <div id="story" class="status">
+                    <button><i class="fas fa-plus-circle"></i></button>
+                    <h4>Create Story</h4>
+                </div>
+                <div id="story1" class="status">
+                    <h3>Thanos</h3>
+                </div>
+                <div id="story2" class="status">
+                    <h3>Avengers Ltd.</h3>
+                </div>
+                <div id="story3" class="status">
+                    <h3>Deadpool</h3>
+                </div>
+                <div id="story4" class="status">
+                    <h3>Kakarot</h3>
+                </div>
+            </div>
+            <div class="post">
+                <button id="post-icon"><i class="fas fa-user"></i></button>
+                <input type="text" name="" id="post-input" placeholder="What's on your mind, Zuku?">
+                <hr>
+                <button id="live-video"><i class="fas fa-video"></i> Live Video</button>
+                <button id="photo-video"><i class="fas fa-photo-video"></i> Photo Video</button>
+                <button id="feeling"><i class="fas fa-smile"></i> Feeling/Activity</button>
+            </div>
+            <div class="room">
+                <button><i class="fas fa-video"></i> Create Room</button>
+                <button id="room-icon"><i class="fas fa-user"></i></button>
+                <button id="room-icon"><i class="fas fa-user"></i></button>
+                <button id="room-icon"><i class="fas fa-user"></i></button>
+                <button id="room-icon"><i class="fas fa-user"></i></button>
+                <button id="room-icon"><i class="fas fa-user"></i></button>
+                <button id="room-icon"><i class="fas fa-user"></i></button>
+                <button id="room-icon"><i class="fas fa-user"></i></button>
+                <button id="room-icon"><i class="fas fa-user"></i></button>
+                <button id="room-icon"><i class="fas fa-user"></i></button>
+            </div>
+
+            <div class="news">
+                <button id="news-icon"><i class="fas fa-user"></i></button>
+                <div class="news-name">
+                    <a href="">Madan Mitra</a>
+                    <br>
+                    <a href="">11h. <i class="fas fa-cog"></i></a>
+                </div>
+                <div class="image"></div>
+                <hr>
+                <button><i class="far fa-thumbs-up"></i> Like</button>
+                <button><i class="far fa-comment-alt"></i> Comment</button>
+                <button><i class="fas fa-share"></i> Share</button>
+                <hr>
+                <button id="comment-icon"><i class="fas fa-user"></i></button>
+                <div class="add-comment">
+                    <input type="text" name="" id="" placeholder="Write a comment...">
+                    <button><i class="fas fa-icons"></i></button>
+                    <button><i class="far fa-smile"></i></button>
+                    <button id="cam"><i class="fas fa-camera"></i></button>
+                    <button id="hash"><i class="fas fa-hashtag"></i></button>
+                    <button id="note"><i class="far fa-sticky-note"></i></button>
+                </div>
+            </div>
+
+            <div class="news1">
+                <button id="news-icon"><i class="fas fa-user"></i></button>
+                <div class="news-name">
+                    <a href="">Thor Odinson</a>
+                    <br>
+                    <a href="">2h. <i class="fas fa-cog"></i></a>
+                </div>
+                <h4>Some Greatest Magicians of MCU.</h4>
+                <div class="image1"></div>
+                <hr>
+                <button><i class="far fa-thumbs-up"></i> Like</button>
+                <button><i class="far fa-comment-alt"></i> Comment</button>
+                <button><i class="fas fa-share"></i> Share</button>
+                <hr>
+                <button id="comment-icon"><i class="fas fa-user"></i></button>
+                <div class="add-comment">
+                    <input type="text" name="" id="" placeholder="Write a comment...">
+                    <button><i class="fas fa-icons"></i></button>
+                    <button><i class="far fa-smile"></i></button>
+                    <button id="cam"><i class="fas fa-camera"></i></button>
+                    <button id="hash"><i class="fas fa-hashtag"></i></button>
+                    <button id="note"><i class="far fa-sticky-note"></i></button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="right-menu">
+            <h4>Your Pages</h4>
+            <button id="page-name"><i class="far fa-grin-squint-tears"></i> বান্টুগিরি - Bantugiri</button>
+            <button id="page-notification"><i class="fas fa-bell"></i> Notifications</button>
+            <button id="page-notification"><i class="fas fa-volume-up"></i> Create Promotion</button>
+            <hr>
+            <div class="heading-contact">
+                <a href="">Contacts</a>
+                <button id="contact-btn"><i class="fas fa-ellipsis-h"></i></button>
+                <button id="contact-btn"><i class="fas fa-search"></i></button>
+                <button id="contact-btn"><i class="fas fa-video"></i></button>
+            </div>
+
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">Mukesh Ambani</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">Sundar Pichai</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">Sherlock Holmes</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">Bruce Wayne</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">Harry Potter</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">Steve Rogers</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">Satya Nadella</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">Tony Stark</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">Ratan Tata</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">Hrithik Roshan</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">Dr. Steven Strange</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">Elon Musk</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">Shah Rukh Khan</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">Gautam Adani</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">Bill Gates</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">Wanda Maximoff</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">Thanos</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">Bruce Banner</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">Lakshmi Mittal</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">Jeff Bezos</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">Warren Buffett</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">Peter Parker</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">Carol Danvers</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">Nick Fury</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">MJ</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">Bucky Barnes</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">Peter Quill</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">Thor Odinson</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">Clint Barton</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">King T'challa</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">Mark Zuckerberg</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">Ajak</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">Ikaris</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">Kingo</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">Gilgamesh</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">Natasha Romanoff</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">Chris Gayle</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">Gwen Stacy</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">New Asgard</button>
+            </div>
+            <div class="contact-name">
+                <button id="name-icon"><i class="far fa-user-circle"></i></button>
+                <button id="name-name">Loki</button>
+            </div>
+
+        </div>
+
+        <div class="messenger" id="msngr">
+            <div class="heading-msngr">
+                <a href="">Messenger</a>
+                <button id="contact-btn"><i class="fas fa-ellipsis-h"></i></button>
+                <button id="contact-btn"><i class="fas fa-arrows-alt"></i></button>
+                <button id="contact-btn"><i class="fas fa-video"></i></button>
+                <button id="contact-btn"><i class="fas fa-edit"></i></button>
+            </div>
+
+            <div class="search-msngr">
+                <input type="search" name="" id="search-msngr" placeholder="Search Messenger">
+            </div>
+
+            <div class="msngr-name" onclick="msg1()">
+                <button id="msngr-icon"><i class="far fa-user-circle"></i></button>
+                <div class="name-msngr">
+                    <h4>Sneha Sen</h4>
+                    <h6>Mention not ❤️</h6>
+                </div>
+            </div>
+            <div class="msngr-name">
+                <button id="msngr-icon"><i class="far fa-user-circle"></i></button>
+                <div class="name-msngr">
+                    <h4>Arthur Curry</h4>
+                    <h6>I'm so fucking sick of that rumour !</h6>
+                </div>
+            </div>
+            <div class="msngr-name">
+                <button id="msngr-icon"><i class="far fa-user-circle"></i></button>
+                <div class="name-msngr">
+                    <h4>Deep Dey</h4>
+                    <h6>Mogambo khush hua...</h6>
+                </div>
+            </div>
+            <div class="msngr-name">
+                <button id="msngr-icon"><i class="far fa-user-circle"></i></button>
+                <div class="name-msngr">
+                    <h4>Madhurima Saha</h4>
+                    <h6>Tested (+ve) today. But not in Covid !!</h6>
+                </div>
+            </div>
+            <div class="msngr-name">
+                <button id="msngr-icon"><i class="far fa-user-circle"></i></button>
+                <div class="name-msngr">
+                    <h4>Phoolchand Tripathi</h4>
+                    <h6>Jalwa hai humara yahan.</h6>
+                </div>
+            </div>
+            <div class="msngr-name">
+                <button id="msngr-icon"><i class="far fa-user-circle"></i></button>
+                <div class="name-msngr">
+                    <h4>তুলিকা পাল</h4>
+                    <h6>আমি কাল কল্যাণী যাব না</h6>
+                </div>
+            </div>
+            <div class="msngr-name">
+                <button id="msngr-icon"><i class="far fa-user-circle"></i></button>
+                <div class="name-msngr">
+                    <h4>Aindrila Saha</h4>
+                    <h6>Pick my call you as*****!!</h6>
+                </div>
+            </div>
+            <div class="msngr-name">
+                <button id="msngr-icon"><i class="far fa-user-circle"></i></button>
+                <div class="name-msngr">
+                    <h4>Tina Garari</h4>
+                    <h6>It's not 'Gari' or 'Garagari', it's Garari.</h6>
+                </div>
+            </div>
+            <div class="msngr-name">
+                <button id="msngr-icon"><i class="far fa-user-circle"></i></button>
+                <div class="name-msngr">
+                    <h4>Poonam Sharma</h4>
+                    <h6>Tissue to le lo...</h6>
+                </div>
+            </div>
+            <div class="msngr-name">
+                <button id="msngr-icon"><i class="far fa-user-circle"></i></button>
+                <div class="name-msngr">
+                    <h4>Ananya Adhikary</h4>
+                    <h6>Thanks!!</h6>
+                </div>
+            </div>
+            <div class="msngr-name">
+                <button id="msngr-icon"><i class="far fa-user-circle"></i></button>
+                <div class="name-msngr">
+                    <h4>Vidyut Thakur</h4>
+                    <h6>Bhai, tere company mein job dila de...</h6>
+                </div>
+            </div>
+            <div class="msngr-name">
+                <button id="msngr-icon"><i class="far fa-user-circle"></i></button>
+                <div class="name-msngr">
+                    <h4>Subhajit Das</h4>
+                    <h6>sent a photo.</h6>
+                </div>
+            </div>
+            <div class="msngr-name">
+                <button id="msngr-icon"><i class="far fa-user-circle"></i></button>
+                <div class="name-msngr">
+                    <h4>Jeetu Bhaiya</h4>
+                    <h6>If you want something work hard and snatch it.</h6>
+                </div>
+            </div>
+            <div class="msngr-name">
+                <button id="msngr-icon"><i class="far fa-user-circle"></i></button>
+                <div class="name-msngr">
+                    <h4>Tony Stark</h4>
+                    <h6>I am.. Iron Man.</h6>
+                </div>
+            </div>
+
+            <div class="msngr-name">
+                <button id="msngr-icon"><i class="far fa-user-circle"></i></button>
+                <div class="name-msngr">
+                    <h4>SayanDip Adhikary</h4>
+                    <h6>That's my secret Captain, I'm always hungry</h6>
+                </div>
+            </div>
+        </div>
+
+        <div class="chatbox" id="chatbox">
+            <div class="name">
+                <button id="chatbox-icon"><i class="fas fa-user-circle"></i></button>
+                <button id="chatbox-name">Sneha Sen</button>
+                <button id="video-call"><i class="fas fa-video"></i></button>
+                <button id="audio-call"><i class="fas fa-phone-alt"></i></button>
+                <button id="minimise" onclick="minimise()"><i class="fas fa-times"></i></button>
+                <button id="active-status"><i class="fas fa-circle"></i></button>
+            </div>
+            <div class="msg">
+                <h6>You are now connected on Messenger</h6>
+                <h4 id="msg1">Hey!</h4>
+                <br>
+                <h4 id="msg2">Hi, how are you?</h4>
+                <br>
+                <h4 id="msg3">Am fine, what about you?</h4>
+                <br>
+                <h4 id="msg4">Am also Good.</h4>
+                <br>
+                <h4 id="msg5">Heard that you are a full stack web developer.</h4>
+                <br>
+                <h4 id="msg6">Yeah, that's right. <br> I'm a MEAN stack developer.</h4>
+                <br>
+                <h4 id="msg7">What does MEAN mean?</h4>
+                <br>
+                <h4 id="msg8">MEAN stands for- <br> MongoDB <br> Express. JS <br> Angular JS <br> Node JS</h4>
+                <br>
+                <h4 id="msg9">It's out of my knowledge. <br> But I guess you are able to develope any kind of website,
+                    isn't it?</h4>
+                <br>
+                <h4 id="msg10">Yap, that's true.</h4>
+                <br>
+                <h4 id="msg11">Okay then, can you clone the Facebook website?</h4>
+                <br>
+                <h4 id="msg12">I'll definitely try that.</h4>
+                <br>
+                <h4 id="msg13">Then please make that and host it live on Netlify.</h4>
+                <br>
+                <h4 id="msg14">Okay, not an issue. <br> I'll upload that on GitHub too.</h4>
+                <br>
+                <h4 id="msg15">That is perfect then.</h4>
+                <br>
+                <h4 id="msg16">See you soon. Bye.</h4>
+                <br>
+                <h4 id="msg17">Bye and best of luck.</h4>
+                <br>
+                <h4 id="msg18">Thank you.</h4>
+                <br>
+                <h4 id="msg19">Mention not ❤️</h4>
+                <br>
+            </div>
+            <div class="msg-in">
+                <button><i class="fas fa-plus-circle"></i></button>
+                <button><i class="far fa-images"></i></button>
+                <button><i class="fas fa-sticky-note"></i></button>
+                <input type="text" name="" id="" placeholder="Aa">
+                <button style="padding-right: 5px;"><i class="fas fa-thumbs-up"></i></button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
